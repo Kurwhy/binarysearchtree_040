@@ -47,9 +47,11 @@ public:
 
 		if (element < parent->info) // if the value in the data filed of the new node is less than of the parent
 		{
-			parent->leftchild = newNode; // Make the right chile of the parent point to the new Node
+			parent->leftchild = newNode; // Make the left chile of the parent point to the new Node
+		}
+		else if (element > parent->info) // if the value in the data filed of the new node is greater than that of the parent
+		{
+			parent->rightchild = newNode; // Make the right chile of the parent point to the new Node
 		}
 	}
-
-
 };
