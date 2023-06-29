@@ -10,11 +10,11 @@ public:
 	Node* rightchild;
 
 	//constructor for the node class
-	Node(string i, Node * 1, Node* r)
+	Node(string i, Node* 1,  Node* r)
 	{
 		info = i;
 		leftchild = 1;
-		rightchile = r;
+		rightchild = r;
 	}
 };
 
@@ -53,5 +53,13 @@ public:
 		{
 			parent->rightchild = newNode; // Make the right chile of the parent point to the new Node
 		}
+	}
+
+	void search(string element, Node*& parent, Node*& currentNode)
+	{
+		// This function searches the currentNode of the specified Node as well as the current Node of its parent
+		currentNode = ROOT;
+		parent = NULL;
+
 	}
 };
